@@ -20,7 +20,7 @@ const LandingPage = () => {
         />
         
         <div className="container mx-auto px-4 pt-20 pb-32 relative z-10">
-          <div className="max-w-3xl mx-aut ">
+          <div className="max-w-3xl mx-aut px-4  md:pl-10 ">
             <h1 className="text-4xl md:text-5xl font-bold mb-2">Launch Your App</h1>
             <p className="text-2xl md:text-3xl mb-4 font-bold ">Grow Your Business</p>
             <p className="text-gray-300 mb-6 text-sm md:text-base  w-[300px] md:w-[400px]">
