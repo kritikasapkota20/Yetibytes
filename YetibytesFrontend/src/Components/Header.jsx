@@ -1,92 +1,85 @@
-import React, { useState } from 'react';
-import yetibyteslogo from '../assets/yetibyteslogo.png'; // Adjust the path as necessary
+import { useState } from 'react';
+import yetibyteslogo from '../assets/yetibyteslogo.png'; 
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState('#home'); // Default active link is "Home"
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-    setIsMobileMenuOpen(false); // Close the mobile menu when a link is clicked
+  const isActive = (path) => {
+    return location.pathname === path;
   };
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="px-4 md:px-10 flex items-center justify-between py-2">
+    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto px-4 md:px-10 flex items-center justify-between py-2">
         {/* Logo Section */}
         <div className="flex items-center">
-          <img
-            src={yetibyteslogo}
-            alt="Yetibytes Logo"
-            className="h-[66px] w-[190px] cursor-pointer"
-          />
+          <Link to="/">
+            <img
+              src={yetibyteslogo}
+              alt="Yetibytes Logo"
+              className="h-[66px] w-[190px] cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex space-x-6 items-center">
-          <a
-            href="#home"
-            onClick={() => handleLinkClick('#home')}
+          <Link
+            to="/"
             className={`${
-              activeLink === '#home' ? 'text-primary' : 'text-gray-700'
+              isActive('/') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
             Home
-          </a>
-          <a
-            href="about"
-            onClick={() => handleLinkClick('#about')}
+          </Link>
+          <Link
+            to="/about"
             className={`${
-              activeLink === '#about' ? 'text-primary' : 'text-gray-700'
+              isActive('/about') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
             About
-          </a>
-          <a
-            href="#services"
-            onClick={() => handleLinkClick('#services')}
+          </Link>
+          <Link
+            to="/services"
             className={`${
-              activeLink === '#services' ? 'text-primary' : 'text-gray-700'
+              isActive('/services') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
             Services
-          </a>
-          <a
-            href="#team"
-            onClick={() => handleLinkClick('#team')}
+          </Link>
+          <Link
+            to="/team"
             className={`${
-              activeLink === '#team' ? 'text-primary' : 'text-gray-700'
+              isActive('/team') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
             Teams
-          </a>
-          <a
-            href="#portfolio"
-            onClick={() => handleLinkClick('#portfolio')}
+          </Link>
+          <Link
+            to="/portfolio"
             className={`${
-              activeLink === '#portfolio' ? 'text-primary' : 'text-gray-700'
+              isActive('/portfolio') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
             Portfolio
-          </a>
-          <a
-            href="#blog"
-            onClick={() => handleLinkClick('#blog')}
+          </Link>
+          <Link
+            to="/blog"
             className={`${
-              activeLink === '#blog' ? 'text-primary' : 'text-gray-700'
+              isActive('/blog') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
             Blog
-          </a>
-          <a
-            href="#contact"
-            onClick={() => handleLinkClick('#contact')}
-            className={`${
-              activeLink === '#contact' ? 'bg-primary' : 'bg-primary'
-            } text-white font-medium px-4 py-2 rounded-lg hover:bg-primaryHover`}
+          </Link>
+          <Link
+            to="/contact"
+            className="bg-primary text-white font-medium px-4 py-2 rounded-lg hover:bg-primaryHover"
           >
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -115,67 +108,67 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <nav className="flex flex-col space-y-4 px-4 py-4">
-            <a
-              href="#home"
-              onClick={() => handleLinkClick('#home')}
+            <Link
+              to="/"
               className={`${
-                activeLink === '#home' ? 'text-primary' : 'text-gray-700'
+                isActive('/') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="#about"
-              onClick={() => handleLinkClick('#about')}
+            </Link>
+            <Link
+              to="/about"
               className={`${
-                activeLink === '#about' ? 'text-primary' : 'text-gray-700'
+                isActive('/about') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               About
-            </a>
-            <a
-              href="#services"
-              onClick={() => handleLinkClick('#services')}
+            </Link>
+            <Link
+              to="/services"
               className={`${
-                activeLink === '#services' ? 'text-primary' : 'text-gray-700'
+                isActive('/services') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
-            </a>
-            <a
-              href="#team"
-              onClick={() => handleLinkClick('#team')}
+            </Link>
+            <Link
+              to="/team"
               className={`${
-                activeLink === '#team' ? 'text-primary' : 'text-gray-700'
+                isActive('/team') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Teams
-            </a>
-            <a
-              href="#portfolio"
-              onClick={() => handleLinkClick('#portfolio')}
+            </Link>
+            <Link
+              to="/portfolio"
               className={`${
-                activeLink === '#portfolio' ? 'text-primary' : 'text-gray-700'
+                isActive('/portfolio') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Portfolio
-            </a>
-            <a
-              href="#blog"
-              onClick={() => handleLinkClick('#blog')}
+            </Link>
+            <Link
+              to="/blog"
               className={`${
-                activeLink === '#blog' ? 'text-primary' : 'text-gray-700'
+                isActive('/blog') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Blog
-            </a>
-            <a
-              href="#contact"
-              onClick={() => handleLinkClick('#contact')}
+            </Link>
+            <Link
+              to="/contact"
               className="bg-primary text-white w-fit font-medium px-4 py-2 rounded-lg hover:bg-primaryHover text-center"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact Us
-            </a>
+            </Link>
           </nav>
         </div>
       )}
