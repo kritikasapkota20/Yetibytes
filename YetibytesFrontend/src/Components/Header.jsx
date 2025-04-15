@@ -34,7 +34,7 @@ const Header = () => {
             Home
           </a>
           <a
-            href="#about"
+            href="about"
             onClick={() => handleLinkClick('#about')}
             className={`${
               activeLink === '#about' ? 'text-primary' : 'text-gray-700'
