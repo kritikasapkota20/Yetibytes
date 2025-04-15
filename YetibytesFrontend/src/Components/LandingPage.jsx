@@ -4,9 +4,9 @@ import banner from '../assets/banner.png'
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#edf7ff]">
       {/* Hero Section with curved bottom */}
-      <section className="relative text-white h-[736px] w-full overflow-hidden">
+      <section className="relative text-white h-[700px]  w-full overflow-hidden ">
         {/* Background Image */}
         <div 
           className="absolute inset-0 z-0"
@@ -31,7 +31,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        {/* Diagonal White Overlay */}
+        
        <div className="absolute bottom-0 left-0 right-0">
   <svg
     xmlns="http://www.w3.org/2000/svg"
