@@ -1,8 +1,8 @@
 import React from 'react'
-import yetibyteslogo from '../assets/yetibyteslogo.png'
-import banner from '../assets/banner.png'
+import yetibyteslogo from '../../assets/yetibyteslogo.png'
+import banner from '../../assets/banner.png'
 
-const LandingPage = () => {
+const Herosection = () => {
   return (
     <div className="min-h-screen bg-[#edf7ff]">
       {/* Hero Section with curved bottom */}
@@ -50,4 +50,4 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default Herosection

@@ -1,15 +1,15 @@
 import React from 'react'
-import LandingPage from '../../Components/LandingPage'
-import ExpertiseCard from './Experties'
-import Workflow from './workFlow'
+import ExpertiseCard from '../../Components/Home/Experties'
+import Workflow from '../../Components/Home/workFlow'
 import Category from './category'
-import Slider from './slider'
-import Banner from './Banner'
+import Slider from '../../Components/Home/slider'
+import Banner from '../../Components/Home/Banner'
+import Herosection from '../../Components/Home/Herosection'
 
 const Home = () => {
   return (
     <>
-      <LandingPage />
+      <Herosection />
       <ExpertiseCard/>
       <Workflow/>
       <Category/>
