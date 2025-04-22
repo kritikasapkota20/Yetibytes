@@ -78,7 +78,7 @@ const TeamSection = () => {
                       className="rounded-full w-32 h-32 object-cover"
                     />
                   </div>
-                  <div className="text-blue-600 font-medium text-center mt-1">{member.role}</div>
+                  <div className="text-primary font-medium text-center mt-1">{member.role}</div>
                   <div className="text-gray-800 text-sm text-center">{member.name}</div>
                 </div>
               ))}

@@ -51,21 +51,14 @@ const Header = () => {
             Services
           </Link>
           <Link
-            to="/team"
+            to="/career"
             className={`${
               isActive('/team') ? 'text-primary' : 'text-gray-700'
             } hover:text-primary font-medium`}
           >
-            Teams
+            Career
           </Link>
-          <Link
-            to="/portfolio"
-            className={`${
-              isActive('/portfolio') ? 'text-primary' : 'text-gray-700'
-            } hover:text-primary font-medium`}
-          >
-            Portfolio
-          </Link>
+          
           <Link
             to="/blog"
             className={`${
@@ -136,23 +129,15 @@ const Header = () => {
               Services
             </Link>
             <Link
-              to="/team"
+              to="/career"
               className={`${
                 isActive('/team') ? 'text-primary' : 'text-gray-700'
               } hover:text-primary font-medium`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Teams
+              Career
             </Link>
-            <Link
-              to="/portfolio"
-              className={`${
-                isActive('/portfolio') ? 'text-primary' : 'text-gray-700'
-              } hover:text-primary font-medium`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Portfolio
-            </Link>
+            
             <Link
               to="/blog"
               className={`${

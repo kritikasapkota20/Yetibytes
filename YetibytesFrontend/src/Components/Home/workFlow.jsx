@@ -70,7 +70,7 @@ const Workflow = () => {
         </div>
       </div>
 
-      <div className="absolute top-28 bottom-10 left-1/2 w-1 bg-primary transform -translate-x-1/2 z-0"></div>
+      <div className="hidden md:block absolute top-28 bottom-10 left-1/2 w-1 bg-primary transform -translate-x-1/2 z-0"></div>
 
       {workflowSteps.map((step, index) => {
         const isEven = index % 2 === 1;
