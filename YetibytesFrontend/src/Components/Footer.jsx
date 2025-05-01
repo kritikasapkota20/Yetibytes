@@ -3,7 +3,7 @@ import Logo from "../assets/yetibyteslogo.png"
 
 const Footer = () => {
   const company = {
-    name: "VetiiBytes",
+    name: "YetiBytes",
     tagline: "TECH PRIVATE LIMITED",
     logo: Logo, 
   };
@@ -60,15 +60,17 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap">
-          <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <div className="mb-4">
+          <div className="w-fit mb-8 md:mb-0 md:mr-5">
+            <div className="mb-4 
+            rounded-md p-3 bg-white 
+             ">
               <img 
                 src={company.logo} 
                 alt={`${company.name} Logo`} 
-                className="h-10"
+                className="h-10   "
               />
             </div>
-            <div className="text-gray-400 text-sm uppercase tracking-wide">{company.tagline}</div>
+            {/* <div className="text-gray-400 text-sm uppercase tracking-wide">{company.tagline}</div> */}
           </div>
 
           {footerLinks.map((column, index) => (
@@ -102,7 +104,7 @@ const Footer = () => {
         <div className="border-gray-700 my-8" />
         <div className="text-center">
           <div className="text-gray-400 text-sm">
-            Copyright ©2024{company.name}. All rights reserved
+            Copyright ©2024 {company.name}. All rights reserved
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const Header = () => {
             <img
               src={yetibyteslogo}
               alt="Yetibytes Logo"
-              className="h-[66px] w-[190px] cursor-pointer"
+              className="h-[66px] w-[190px] cursor-pointer "
             />
           </Link>
         </div>
