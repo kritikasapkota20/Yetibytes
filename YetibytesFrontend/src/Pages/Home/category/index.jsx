@@ -26,7 +26,7 @@ const Category = () => {
     >
 
     <div className="bg-white w-full max-w-7xl mx-auto mt-10" >
-      <div className="bg-blue-600 text-white flex justify-center py-4 font-bold text-lg">
+      <div className="bg-primary text-white flex justify-center py-4 font-bold text-lg">
         <div className="flex gap-32 items-center">
           <div>DESIGN</div>
            <div className='h-10 '>
@@ -43,9 +43,9 @@ const Category = () => {
             onClick={() => setSelectedCategory(category)}
             className={`${
                 selectedCategory === category
-                ? "text-blue-700 border-b-2 border-blue-700"
+                ? "text-primary border-b-2 border-primary"
                 : "text-gray-600"
-            } hover:text-blue-700 transition-all`}
+            } hover:text-primary transition-all`}
             >
             {category}
           </button>
@@ -80,7 +80,7 @@ const Category = () => {
       <div className="text-center pb-8 py-4">
         <button
           onClick={() => navigate("/services")}
-          className="border border-blue-700 text-blue-700 px-6 py-2 rounded inline-flex items-center hover:bg-blue-700 hover:text-white transition"
+          className="border border-primary text-primary px-6 py-2 rounded inline-flex items-center hover:bg-primary hover:text-white transition"
           >
           Our Services
           <svg

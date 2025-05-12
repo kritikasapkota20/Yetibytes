@@ -19,17 +19,17 @@ const ExpertiseCard = () => {
     {
       id: 3,
       img: application, 
-      title: "Application Development",
+      title: "Digital Marketing",
     },
     {
       id: 4,
       img: digital, 
-      title: "Digital Marketing",
+      title: "Software Development",
     },
     {
       id: 5,
       img: software,
-      title: "Software Development",
+      title: "UI/UX Design",
     },
   ];
 
@@ -38,7 +38,7 @@ const ExpertiseCard = () => {
       <div className="text-2xl font-semibold text-primary mb-8">
         Areas of Expertise
       </div>
-      <div className="flex flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-5 cursor-pointer">
         {data.map((item) => (
           <div
             key={item.id}

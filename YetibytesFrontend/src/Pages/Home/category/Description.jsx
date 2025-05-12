@@ -40,7 +40,7 @@ const Description = ({ selectedCategory }) => {
       <div className="flex-1 w-full md:w-1/2">
         <div className="text-2xl font-bold mb-4">{heading}</div>
         <div className="text-gray-600 mb-6">{text}</div>
-        <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition-colors">
+        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryHover transition-colors">
           Start Now
         </button>
 

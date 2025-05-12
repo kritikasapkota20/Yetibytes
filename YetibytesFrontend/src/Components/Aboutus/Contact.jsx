@@ -40,7 +40,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-blue-50 w-full py-12 px-4">
+    <div className=" w-full py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-primary text-center mb-12">Get In Touch</h1>
         
@@ -79,7 +79,7 @@ const Contact = () => {
               </div>
               
               <div className="mb-4">
-                <label htmlFor="email" className="block text-sm text-gray-700 mb-1">Email</label>
+                <label htmlFor="email" className="block text-sm text-gray-500 mb-1">Email</label>
                 <input
                   type="email"
                   
@@ -152,7 +152,7 @@ const Contact = () => {
             
             <div className="mt-8 text-center">
               <div className="text-white text-sm mb-3">My question is not here.</div>
-              <button className="bg-white hover:bg-gray-100 text-blue-700 font-medium py-2 px-6 rounded-md inline-flex items-center transition duration-300">
+              <button className="bg-white hover:bg-gray-100 text-primary font-medium py-2 px-6 rounded-md inline-flex items-center transition duration-300">
                 CONTACT US
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

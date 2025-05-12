@@ -74,7 +74,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Diagonal White Overlay */}
         <div 
           className="absolute bottom-0 left-0 right-0 h-32 bg-white"
           style={{
