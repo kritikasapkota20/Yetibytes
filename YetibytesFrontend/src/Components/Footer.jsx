@@ -54,19 +54,19 @@ const Footer = () => {
           <div className="text-3xl font-medium max-w-md mb-6 md:mb-0">
             Kickstart your project with our team of experts.
           </div>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded">
+          <button className="bg-primary hover:bg-primaryHover text-white py-3 px-6 rounded">
             Let's Work Together
           </button>
         </div>
 
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <div className="mb-4">
-              <img 
-                src={company.logo} 
-                alt={`${company.name} Logo`} 
-                className="h-10"
-              />
+            <div className="mb-4 bg-white p-2 rounded w-fit shadow-md">
+            <img 
+    src={company.logo} 
+    alt={`${company.name} Logo`} 
+    className="h-12 w-auto object-contain"
+  />
             </div>
             <div className="text-gray-400 text-sm uppercase tracking-wide">{company.tagline}</div>
           </div>

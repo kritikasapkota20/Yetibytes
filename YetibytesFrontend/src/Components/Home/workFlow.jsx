@@ -15,7 +15,7 @@ const Workflow = () => {
       description:
         'Our first priority is understanding you—your goals, your challenges, and your audience. We dive deep into your business to uncover the "why" behind your project, ensuring we build solutions that align with your vision from the start.',
       img: Discover,
-      iconColor: "bg-blue-600",
+      iconColor: "bg-primary",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Workflow = () => {
       description:
         "With a clear understanding of your needs, we create a roadmap. From tech stacks to timelines, we lay out everything in a structured, transparent way so you know exactly what to expect, when, and how.",
       img: Strategize,
-      iconColor: "bg-blue-600",
+      iconColor: "bg-primary",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Workflow = () => {
       description:
         "Our design team crafts user experiences that feel natural and look stunning. Whether it's a sleek mobile app or a dynamic web platform, every screen is tailored to offer clarity and engagement for your users.",
       img: Design,
-      iconColor: "bg-blue-600",
+      iconColor: "bg-primary",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const Workflow = () => {
       description:
         "Our developers build robust, scalable software using the latest technologies. Throughout the process, we conduct rigorous testing to ensure your product works seamlessly across devices and platforms.",
       img: Develop,
-      iconColor: "bg-blue-600",
+      iconColor: "bg-primary",
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const Workflow = () => {
       description:
         "Once your product is polished and tested, we launch it with confidence. Whether it's a live deployment or app store submission, we handle the technical details and ensure a smooth transition from development to delivery.",
       img: ProductLaunch,
-      iconColor: "bg-blue-600",
+      iconColor: "bg-primary",
     },
     {
       id: 6,
@@ -55,7 +55,7 @@ const Workflow = () => {
       description:
         "After launch, we offer ongoing support, maintenance, and upgrades. As your needs grow and the digital landscape changes, we're here to help you evolve and stay ahead.",
       img: Support,
-      iconColor: "bg-blue-600",
+      iconColor: "bg-primary",
     },
   ];
 

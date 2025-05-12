@@ -12,7 +12,7 @@ const Banner=()=> {
           <div className="w-full h-full rounded-md opacity-20  bg-center z-10"/>
           <img src={Image} className=" w-full h-48" 
             />
-          <button className="bg-blue-700 text-white py-3 px-6 rounded-md font-semibold  flex justify-center text-center z-20">
+          <button className="bg-primary text-white  py-3 px-6 rounded-md font-semibold  flex justify-center text-center z-20 hover:bg-primaryHover">
           
             Let's Work together
           </button>

@@ -86,7 +86,7 @@ const Member = () => {
         <button
           onClick={goToPrevious}
           disabled={startIndex === 0}
-          className="text-white bg-blue-700 w-10 h-10 justify-center rounded-full hover:bg-blue-800 disabled:opacity-50"
+          className="text-white bg-primary w-10 h-10 justify-center rounded-full hover:bg-blue-800 disabled:opacity-50"
         >
           ←
         </button>
@@ -104,7 +104,7 @@ const Member = () => {
         <button
           onClick={goToNext}
           disabled={startIndex + 3 >= data.length}
-          className="text-white bg-blue-700 w-10 h-10 justify-center rounded-full hover:bg-blue-800 disabled:opacity-50"
+          className="text-white bg-primary w-10 h-10 justify-center rounded-full hover:bg-blue-800 disabled:opacity-50"
         >
           →
         </button>
