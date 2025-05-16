@@ -1,6 +1,6 @@
 import React from 'react'
 import yetibyteslogo from '../../assets/yetibyteslogo.png'
-import banner from '../../assets/banner.png'
+import banner from '../../assets/Banner.png'
 
 const Herosection = () => {
   return (
