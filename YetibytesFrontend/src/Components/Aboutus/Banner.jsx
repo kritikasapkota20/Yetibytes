@@ -28,7 +28,7 @@ const Banner = () => {
         </div>
 
         <div className="md:w-3/5 py-4">
-          <div className="text-2xl md:text-3xl font-bold text-primary mb-4 leading-snug">
+          <div className="text-2xl md:text-3xl font-bold text-black mb-4 leading-snug">
             We are a full-service digital<br className="hidden md:block" /> solutions company.
           </div>
           <div className="text-gray-500 mb-4 leading-relaxed">

@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-gray-700 my-8" />
         <div className="text-center">
           <div className="text-gray-400 text-sm">
-            Copyright ©2024 {company.name}. All rights reserved
+            Copyright ©2025 {company.name}. All rights reserved
           </div>
         </div>
       </div>

@@ -55,14 +55,14 @@ const Description = ({ selectedCategory }) => {
 
       {/* Right section: images */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full md:w-1/2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full md:w-1/2  items-center">
         {images &&
           images.map((src, index) => (
               <img
               key={index}
               src={src}
               alt={`${selectedCategory} ${index + 1}`}
-              className=""
+              className="w-full object-cover h-[250px] md:h-auto mx-auto "
               />
             ))}
       </div>

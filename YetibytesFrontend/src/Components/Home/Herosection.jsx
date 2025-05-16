@@ -31,17 +31,17 @@ const Herosection = () => {
           </div>
         </div>
 
-        
-       <div className="absolute bottom-0 left-0 right-0">
+     <div className="absolute bottom-0 left-0 right-0">
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1440 320"
-    className="w-full h-auto"
+    viewBox="0 0 1440 150"  // Reduced height
+    className="w-full h-16 md:h-24"  // Responsive height control
+    preserveAspectRatio="none"
   >
     <path
-      fill="#ffffff" // Use your background color here
+      fill="#ffffff"
       fillOpacity="1"
-      d="M0,160L48,165.3C96,171,180,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
     ></path>
   </svg>
 </div>
