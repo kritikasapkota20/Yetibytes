@@ -90,7 +90,7 @@ const Member = () => {
         >
           ←
         </button>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center overflow-visible">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center z-20">
           {visibleCards.map((test, idx) => (
             <SliderCard
               key={startIndex + idx}

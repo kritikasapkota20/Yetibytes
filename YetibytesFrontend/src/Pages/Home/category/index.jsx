@@ -77,10 +77,10 @@ const Category = () => {
       </div>
 
     </div>
-      <div className="text-center  pt-8">
+      <div className="text-center  pt-10">
         <button
           onClick={() => navigate("/services")}
-          className="border border-primary font-bold text-primary px-6 py-2 rounded inline-flex items-center hover:bg-primary hover:text-white transition"
+          className="border border-primary text-[20px] font-bold text-primary px-6 py-2 rounded inline-flex items-center hover:bg-primary hover:text-white transition"
           >
           Our Services
           <svg
