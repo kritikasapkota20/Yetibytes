@@ -37,10 +37,10 @@ const Description = ({ selectedCategory }) => {
   return (
     <div className="flex flex-col gap-8 md:flex-row">
       {/* Left section: heading, text, button, contact */}
-      <div className="flex-1 w-full md:w-1/2">
+      <div className="flex-1 w-full md:w-1/2 ">
         <div className="text-2xl font-bold mb-4">{heading}</div>
         <div className="text-gray-600 mb-6">{text}</div>
-        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryHover transition-colors">
+        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryHover transition-colors mb-10">
           Start Now
         </button>
 
