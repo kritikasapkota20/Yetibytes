@@ -3,14 +3,13 @@ import Image from "../../assets/Group 40.svg";
 
 const Banner = () => {
   return (
-   <div className="relative bg-[#E6F4FF] overflow-hidden">
+   <div className="relative bg-[#E6F4FF] overflow-hidden ">
   {/* Content above curve */}
-  <div className="flex justify-center items-center w-full py-20 px-4">
-    <div className="bg-white rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center w-full max-w-4xl p-7 gap-6">
+  <div className="flex justify-center items-center w-full pt-20 px-4">
+    <div className="bg-white rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center w-full max-w-5xl p-7 px-7 md:px-20 gap-6">
       <div className="text-xl md:text-2xl font-bold text-gray-800 text-center md:text-left w-full md:w-[340px]">
         Hire the best developers and designers around!
       </div>
-
       <div className="relative flex-shrink-0 w-full max-w-[250px]">
         <img
           src={Image}
@@ -28,7 +27,7 @@ const Banner = () => {
 
   {/* === Bottom Curve SVG === */}
   <svg
-    className="w-full h-[80px] block"
+    className="w-full h-[80px] bottom-0 block"
     viewBox="0 0 1440 100"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="none"

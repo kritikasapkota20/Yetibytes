@@ -17,7 +17,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="min-h-scre py-12"
+    <div className="min-h-scre "
     style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
@@ -25,9 +25,9 @@ const Category = () => {
     }} 
     >
 
-    <div className="bg-white w-full max-w-7xl mx-auto mt-6" >
+    <div className="bg-white w-full max-w-6xl mx-auto " >
       <div className="bg-primary text-white flex justify-center py-4 font-bold text-lg">
-        <div className="flex gap-32 items-center">
+        <div className="flex gap-10  sm:gap-15 md:gap-32 items-center">
           <div>DESIGN</div>
            <div className='h-10 '>
                 <img className='h-20' src={Logo} alt="Logo" />

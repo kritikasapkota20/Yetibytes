@@ -54,7 +54,7 @@ const TeamSection = () => {
 
         <div className=" hidden md:block absolute top-28 bottom-10 left-1/2 w-1 bg-gray-600 transform -translate-x-1/2 z-0"></div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center mx-auto max-w-6xl px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center mx-aut max-w-6xl px-4">
           <div className="md:w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
             <div className="bg-gray-200 rounded-full p-2 mb-4 flex justify-center items-center">
               <img
@@ -70,7 +70,7 @@ const TeamSection = () => {
           <div className="md:w-1/2 px-6">
             <div className="grid grid-cols-2 gap-4">
               {data.members.map((member, index) => (
-                <div key={index} className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center pl-0 md:pl-5">
                   <div className="rounded-full p-1 mb-2">
                     <img
                       src={member.img}

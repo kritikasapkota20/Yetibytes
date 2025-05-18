@@ -34,7 +34,7 @@ const ExpertiseCard = () => {
   ];
 
   return (
-    <div className="py-6 text-center">
+    <div className=" px-4 text-center mt-4 ">
       <div className="text-2xl font-semibold text-primary mb-8">
         Areas of Expertise
       </div>
@@ -42,7 +42,7 @@ const ExpertiseCard = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-48 h-48 bg-white shadow-md rounded-md p-6 flex flex-col items-center justify-center transition-transform duration-200 transform hover:scale-105"
+            className=" w-48 h-48 bg-white shadow-md rounded-md p-6 flex flex-col items-center justify-center transition-transform duration-200 transform hover:scale-105"
           >
             <img 
               src={item.img} 

@@ -34,7 +34,7 @@ const socialMediaLinks = [
 
 const AboutUs = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-scree ">
       <div className="w-full h-[500px] relative overflow-hidden">
         <div
           className="absolute inset-0 bg-no-repeat bg-cover bg-center"

@@ -35,15 +35,14 @@ const Description = ({ selectedCategory }) => {
   const { heading, text, images } = content[selectedCategory] || {};
 
   return (
-    <div className="flex flex-col gap-8 md:flex-row">
+    <div className="flex flex-col gap-8 md:flex-row px-4">
       {/* Left section: heading, text, button, contact */}
       <div className="flex-1 w-full md:w-1/2 ">
         <div className="text-2xl font-bold mb-4">{heading}</div>
         <div className="text-gray-600 mb-6">{text}</div>
-        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryHover transition-colors mb-10">
+        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryHover transition-colors  mb-4 md:mb-8">
           Start Now
         </button>
-
         <div className="mt-8 text-sm text-gray-600">
           <div>Confused on how to start? Contact us</div>
           <div className="flex items-center gap-4 mt-2">
