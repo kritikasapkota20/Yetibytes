@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Home from './Pages/Home/index'
 import About from "./Pages/About/index"
 import MainLayout from './Layout/MainLayout'
@@ -7,9 +8,14 @@ import Contact from "./Pages/Contact/index"
 import Career from "./Pages/Career/index"
 import Blog from './Pages/Blog/Blog'
 
+ 
+
+
 const App = () => {
   return (
     <div>
+       {/* ... */}
+       <SpeedInsights />
       <BrowserRouter>
         <Routes>
           <Route element={<MainLayout />}>
