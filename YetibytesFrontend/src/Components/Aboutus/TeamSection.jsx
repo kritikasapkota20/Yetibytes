@@ -50,9 +50,9 @@ const TeamSection = () => {
         <div className="flex justify-center items-center text-3xl font-bold mb-16">
           <div className="text-black flex mr-2">OUR</div>
           <div className="text-primary">TEAM</div>
+        <div className=" hidden md:block absolute  top-28 bottom-10 left-1/3 w-1 bg-gray-600 transform -translate-x-1/2 z-0"></div>
         </div>
 
-        <div className=" hidden md:block absolute top-28 bottom-10 left-1/2 w-1 bg-gray-600 transform -translate-x-1/2 z-0"></div>
 
         <div className="flex flex-col md:flex-row items-center justify-center mx-aut max-w-6xl px-4">
           <div className="md:w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
