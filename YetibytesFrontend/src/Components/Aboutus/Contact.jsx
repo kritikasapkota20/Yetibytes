@@ -40,8 +40,8 @@ const Contact = () => {
   ];
 
   return (
-    <div className=" w-full py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className=" max-w-7xl mx-auto py-12 px-16">
+      <div className="">
         <h1 className="text-3xl font-bold text-primary text-center mb-12">Get In Touch</h1>
         
         <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">

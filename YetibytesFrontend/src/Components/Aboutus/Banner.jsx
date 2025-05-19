@@ -2,8 +2,8 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="w-full flex justify-center py-6">
-      <div className="w-4/5 flex flex-col md:flex-row items-center gap-16">
+    <div className="max-w-6xl flex justify-center py-6 px-4 md:px-16 mx-auto ">
+      <div className="flex flex-col md:flex-row items-center gap-16 max-w-7xl w-full">
         <div className="grid grid-cols-2 md:w-2/5">
           <img
             src="https://images.pexels.com/photos/11813108/pexels-photo-11813108.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -27,11 +27,11 @@ const Banner = () => {
           />
         </div>
 
-        <div className="md:w-3/5 py-4">
-          <div className="text-2xl md:text-3xl font-bold text-primary mb-4 leading-snug">
+        <div className="md:w-3/5 py-">
+          <div className="text-2xl lg:text-3xl font-bold text-black mb-4 leading-snug">
             We are a full-service digital<br className="hidden md:block" /> solutions company.
           </div>
-          <div className="text-gray-500 mb-4 leading-relaxed">
+          <div className="text-gray-500 mb-4 leading-relaxed text-justify hyphens-auto">
             Yetibytes is the best web development company in Nepal, which specializes in building
             custom web solutions that promote business success. Being a top Web app development
             company in Nepal, we concentrate on producing creative, excellent websites and web apps.

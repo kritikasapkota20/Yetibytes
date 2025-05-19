@@ -17,7 +17,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12"
+    <div className="min-h-scre "
     style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
@@ -25,9 +25,9 @@ const Category = () => {
     }} 
     >
 
-    <div className="bg-white w-full max-w-7xl mx-auto mt-10" >
+    <div className="bg-white w-full max-w-6xl mx-auto " >
       <div className="bg-primary text-white flex justify-center py-4 font-bold text-lg">
-        <div className="flex gap-32 items-center">
+        <div className="flex gap-10  sm:gap-15 md:gap-32 items-center">
           <div>DESIGN</div>
            <div className='h-10 '>
                 <img className='h-20' src={Logo} alt="Logo" />
@@ -52,7 +52,7 @@ const Category = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-10 gap-10">
+      <div className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-8 gap-10">
         {/* <div className="flex-1">
           <div className="text-2xl font-bold mb-4">Create Your Own Designs</div>
           <div className="text-gray-600 mb-6">
@@ -77,10 +77,10 @@ const Category = () => {
       </div>
 
     </div>
-      <div className="text-center pb-8 py-4">
+      <div className="text-center  pt-10">
         <button
           onClick={() => navigate("/services")}
-          className="border border-primary text-primary px-6 py-2 rounded inline-flex items-center hover:bg-primary hover:text-white transition"
+          className="border border-primary text-[20px] font-bold text-primary px-6 py-2 rounded inline-flex items-center hover:bg-primary hover:text-white transition"
           >
           Our Services
           <svg

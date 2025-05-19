@@ -36,10 +36,10 @@ const data = [
 const SliderCard = ({ test, featured }) => {
   return (
     <div
-      className={`relative flex flex-col items-center text-center justify-center rounded-lg shadow-md transition-transform duration-300 w-64 h-64 ${
+      className={`relative flex flex-col items-center text-center justify-center rounded-lg shadow-md transition-transform duration-300 w-64 h-64  ${
         featured
           ? "bg-blue-800 text-white scale-110 z-10"
-          : "bg-yellow-50 text-gray-800 scale-95 opacity-80"
+          : "bg-[#FFF5ED] text-gray-800 scale-95 opacity-80"
       }`}
       style={{ transformOrigin: "center bottom" }}
     >
@@ -49,11 +49,13 @@ const SliderCard = ({ test, featured }) => {
           <div key={i} className="text-yellow-400 flex items-end justify-end text-xl">★</div>
         ))}
       </div>
-      <img
-        src={test.img}
-        alt={test.name}
-        className="w-16 h-16 rounded-full border-4 border-white absolute -bottom-8"
-      />
+ <div className="absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0 ">
+  <img
+    src={test.img}
+    alt={test.name}
+    className="w-20 h-20 rounded-full border-4 border-white shadow-md "
+  />
+</div>
     </div>
   );
 };
@@ -64,7 +66,7 @@ const Member = () => {
   const visibleCards = data.slice(startIndex, startIndex + 3);
 
   const goToNext = () => {
-    if (startIndex + 3 < data.length) {
+    if (startIndex + 3 < data.length){
       setStartIndex(startIndex + 1);
     }
   };
@@ -74,14 +76,12 @@ const Member = () => {
       setStartIndex(startIndex - 1);
     }
   };
-
   return (
-    <div className="bg-blue-50   ">
-      <div className="text-2xl md:text-3xl text-center py-16 font-semibold text-gray-800">
+    <div className="bg-blue-50 mt-3  ">
+      <div className="text-2xl md:text-3xl text-center pb-6 md:pb-20 mt-10  font-semibold text-gray-800">
         Why customers love 
         <div className="text-blue-800 font-bold  ">working with us</div>
       </div>
-
       <div className="flex justify-center items-center gap-4 relative ">
         <button
           onClick={goToPrevious}
@@ -90,8 +90,7 @@ const Member = () => {
         >
           ←
         </button>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+        <div className=" mt-6 md:mt-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-14  md:gap-7 items-center z-20">
           {visibleCards.map((test, idx) => (
             <SliderCard
               key={startIndex + idx}
@@ -100,7 +99,6 @@ const Member = () => {
             />
           ))}
         </div>
-
         <button
           onClick={goToNext}
           disabled={startIndex + 3 >= data.length}
@@ -112,5 +110,4 @@ const Member = () => {
     </div>
   );
 };
-
 export default Member;

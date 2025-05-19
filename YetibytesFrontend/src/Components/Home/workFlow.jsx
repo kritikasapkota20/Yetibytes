@@ -60,17 +60,17 @@ const Workflow = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 relative">
-      <div className="text-center mb-16">
-        <div className="text-headingLarge font-bold text-primary mb-2">
+    <div className="max-w-6xl mx-auto px- py-16 relative">
+      <div className="text-center mb-20">
+        <div className="text-xl font-bold text-primary mb-2">
           HOW WE WORK
         </div>
-        <div className="text-headingMedium text-secondary">
+        <div className="text-headingMedium text-secondary font-semibold ">
           Our process, built for clarity and flow.
         </div>
       </div>
 
-      <div className="hidden md:block absolute top-28 bottom-10 left-1/2 w-1 bg-primary transform -translate-x-1/2 z-0"></div>
+      <div className="hidden md:block absolute top-28 bottom-10 mt-10 left-1/2 w-1 bg-primary transform -translate-x-1/2 z-0"></div>
 
       {workflowSteps.map((step, index) => {
         const isEven = index % 2 === 1;
@@ -78,7 +78,7 @@ const Workflow = () => {
         return (
           <div key={step.id}>
             <div
-              className={`relative z-10 mb-16 flex flex-col md:flex-row items-center ${
+              className={`relative z-10 mb-1 flex flex-col md:flex-row items-center ${
                 isEven ? "md:flex-row-reverse" : ""
               }`}
             >
@@ -90,8 +90,10 @@ const Workflow = () => {
                 />
               </div>
 
-              <div className="w-full md:w-1/2 px-6 relative">
-                <div className="absolute left-1/2 transform -translate-x-1/2 -top-6 z-10">
+              <div className="w-full md:w-1/2 md:px-6 relative">
+                <div className= {`absolute px-20 top-[-24px] z-10 ${
+      isEven ? "right-0" : "left-0"
+    }`}>
                   <div
                     className={`${step.iconColor} text-white w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-md`}
                   >
@@ -99,11 +101,11 @@ const Workflow = () => {
                   </div>
                 </div>
 
-                <div className=" text-left p-6 ">
-                  <div className="text-headingLarge font-semibold text-black mb-2">
+                <div className=" text-right p-6 ">
+                  <div className={`px-6 py-3 ${isEven ? "text-right" : "text-left"} font-bold text-lg`}>
                     {step.title}
                   </div>
-                  <div className="text-paragraphMedium">{step.description}</div>
+                  <div className="text-paragraphMedium text-justify [hyphens:auto] px-6">{step.description}</div>
                 </div>
               </div>
             </div>

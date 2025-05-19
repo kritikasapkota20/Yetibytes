@@ -48,7 +48,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-slate-800 text-white py-12 px-8">
+    <footer className="bg-slate-800 text-white py-12 px-16">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
           <div className="text-3xl font-medium max-w-md mb-6 md:mb-0">
@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-gray-700 my-8" />
         <div className="text-center">
           <div className="text-gray-400 text-sm">
-            Copyright ©2024 {company.name}. All rights reserved
+            Copyright ©2025 {company.name}. All rights reserved
           </div>
         </div>
       </div>

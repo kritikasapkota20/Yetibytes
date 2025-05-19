@@ -1,4 +1,5 @@
 import React from "react";
+import Digitalmarketing from "../../assets/digitalmarketingicon.svg"
 
 const Description = ({ selectCategory }) => {
     const data = {
@@ -48,7 +49,7 @@ const Description = ({ selectCategory }) => {
                     detail: "Engage users and grow your brand across social platforms.",
                 },
             ],
-            image: "https://cdn.pixabay.com/photo/2025/03/06/08/25/blueberries-9450130_1280.jpg",
+            image:Digitalmarketing,
         },
         "Software Development": {
             heading: "Software Development",
@@ -87,7 +88,7 @@ const Description = ({ selectCategory }) => {
     const category = data[selectCategory] || data["Web Development"];
 
     return (
-        <div className="w-full flex flex-col md:flex-row gap-8">
+        <div className="w-full flex flex-col md:flex-row gap-8 ">
             <div className="text-section">
                 <div className="text-2xl text-primary py-2">{category.heading}</div>
                 <div className="text-gray-500">{category.description}</div>
@@ -106,7 +107,7 @@ const Description = ({ selectCategory }) => {
                 <img
                     src={category.image}
                     alt={category.heading}
-                    className="rounded-md shadow-md h-[300px] w-full"
+                    className="rounded-md  h-[350px] w-full"
                 />
             </div>
         </div>

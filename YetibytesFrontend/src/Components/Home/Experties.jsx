@@ -1,29 +1,29 @@
 import React from "react";
-import website from "../../assets/website.svg"
-import application from "../../assets/application.svg"
-import digital from "../../assets/digital.svg"
-import software from "../../assets/software.svg"
+import website from "../../assets/website.svg";
+import application from "../../assets/application.svg";
+import digital from "../../assets/digital.svg";
+import software from "../../assets/software.svg";
 
 const ExpertiseCard = () => {
   const data = [
     {
       id: 1,
-      img: website, 
+      img: website,
       title: "Website Development",
     },
     {
       id: 2,
-      img: application, 
+      img: application,
       title: "Application Development",
     },
     {
       id: 3,
-      img: application, 
+      img: digital,
       title: "Digital Marketing",
     },
     {
       id: 4,
-      img: digital, 
+      img: software,
       title: "Software Development",
     },
     {
@@ -34,7 +34,7 @@ const ExpertiseCard = () => {
   ];
 
   return (
-    <div className="py-6 text-center">
+    <div className="px-4 text-center mt-4">
       <div className="text-2xl font-semibold text-primary mb-8">
         Areas of Expertise
       </div>
@@ -42,13 +42,14 @@ const ExpertiseCard = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-48 h-48 bg-white shadow-md rounded-md p-6 flex flex-col items-center justify-center transition-transform duration-200 transform hover:scale-105"
+            className="w-48 h-48 bg-white shadow-md rounded-md p-6 flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-primary group"
           >
-            <img 
-              src={item.img} 
-              className="mb-2 w-10 h-10" 
+            <img
+              src={item.img}
+              alt={item.title}
+              className="mb-2 w-16 h-16 transition-all duration-300 group-hover:brightness-0 group-hover:invert"
             />
-            <div className="text-sm font-medium text-center mt-2">
+            <div className="text-sm font-medium text-center mt-2 text-gray-800 group-hover:text-white">
               {item.title}
             </div>
           </div>
