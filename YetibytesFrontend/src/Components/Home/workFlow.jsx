@@ -1,5 +1,5 @@
 import React from "react";
-import vector from "../../assets/Vector 374.svg";
+import vector from "../../assets/Vector.png";
 import Discover from "../../assets/image1.svg";
 import Strategize from "../../assets/image2.svg";
 import Design from "../../assets/image3.svg";
@@ -62,38 +62,35 @@ const Workflow = () => {
   return (
     <div className="max-w-6xl mx-auto px- py-16 relative">
       <div className="text-center mb-20">
-        <div className="text-xl font-bold text-primary mb-2">
-          HOW WE WORK
-        </div>
+        <div className="text-xl font-bold text-primary mb-2">HOW WE WORK</div>
         <div className="text-headingMedium text-secondary font-semibold ">
           Our process, built for clarity and flow.
         </div>
       </div>
 
-      <div className="hidden md:block absolute top-28 bottom-10 mt-10 left-1/2 w-1 bg-primary transform -translate-x-1/2 z-0"></div>
+      <div className="hidden md:block absolute top-28 bottom-10 mt-10 left-1/2 w-1 bg-primary transform -translate-x-1/2 z-0"><img src={vector} /></div>
 
       {workflowSteps.map((step, index) => {
         const isEven = index % 2 === 1;
 
         return (
           <div key={step.id}>
+            
             <div
               className={`relative z-10 mb-1 flex flex-col md:flex-row items-center ${
                 isEven ? "md:flex-row-reverse" : ""
               }`}
             >
-
               <div className="w-full md:w-1/2 md:mb-0 flex justify-evenly">
-                <img
-                  src={step.img}
-                  className="w-48 h-48 object-contain"
-                />
+                <img src={step.img} className="w-48 h-48 object-contain" />
               </div>
 
               <div className="w-full md:w-1/2 md:px-6 relative">
-                <div className= {`absolute px-20 top-[-24px] z-10 ${
-      isEven ? "right-0" : "left-0"
-    }`}>
+                <div
+                  className={`absolute px-20 top-[-24px] z-10 ${
+                    isEven ? "right-0" : "left-0"
+                  }`}
+                >
                   <div
                     className={`${step.iconColor} text-white w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-md`}
                   >
@@ -102,23 +99,24 @@ const Workflow = () => {
                 </div>
 
                 <div className=" text-right p-6 ">
-                  <div className={`px-6 py-3 ${isEven ? "text-right" : "text-left"} font-bold text-lg`}>
+                  <div
+                    className={`px-6 py-3 ${
+                      isEven ? "text-right" : "text-left"
+                    } font-bold text-lg`}
+                  >
                     {step.title}
                   </div>
-                  <div className="text-paragraphMedium text-justify [hyphens:auto] px-6">{step.description}</div>
+                  <div className="text-paragraphMedium text-justify [hyphens:auto] px-6">
+                    {step.description}
+                  </div>
                 </div>
+                
               </div>
+              
             </div>
-
-            {index < workflowSteps.length - 1 && (
-              <div className="h-20 flex justify-center relative">
-                <img
-                  src={vector}
-                  alt="Connecting dashed line"
-                  className="h-full"
-                />
-              </div>
-            )}
+            
+              
+            
           </div>
         );
       })}
