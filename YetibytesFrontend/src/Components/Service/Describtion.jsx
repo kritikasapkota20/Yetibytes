@@ -1,5 +1,6 @@
 import React from "react";
 import Digitalmarketing from "../../assets/digitalmarketingicon.svg"
+import image from "../../assets/webdevlopment.svg";
 
 const Description = ({ selectCategory }) => {
     const data = {
@@ -17,7 +18,7 @@ const Description = ({ selectCategory }) => {
                     detail: "Efficient use of client side scripting for enhanced user interactivity.",
                 },
             ],
-            image: "https://cdn.pixabay.com/photo/2024/04/30/04/36/chess-8729265_1280.png",
+            image: image,
         },
         "Mobile App Development": {
             heading: "Mobile App Development",
