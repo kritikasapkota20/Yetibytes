@@ -8,6 +8,7 @@ import Service from "./Pages/Service/index"
 import Contact from "./Pages/Contact/index"
 import Career from "./Pages/Career/index"
 import Blog from './Pages/Blog/Blog'
+import ScrollToTop from "./Components/ScrollToTop";
 
  
 
@@ -18,6 +19,7 @@ const App = () => {
        {/* ... */}
        <SpeedInsights />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
