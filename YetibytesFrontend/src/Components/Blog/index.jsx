@@ -89,7 +89,7 @@ const BlogResources = () => {
       <div className="py-16 text-center">
         <div className="text-sm text-primary font-medium mb-4">Our blog</div>
         <div className="text-3xl md:text-4xl font-bold text-primary mb-4">Resources and insights</div>
-        <div className="text-gray-500 max-w-2xl mx-auto px-4">
+        <div className="text-gray-500 max-w-2xl mx-auto px">
           The latest industry news, interviews, technologies, and resources.
         </div>
         <div className="mt-6 max-w-md mx-auto px-4">
@@ -106,7 +106,7 @@ const BlogResources = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 pb-16">
+      <div className="max-w-6xl mx-auto pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPosts.length > 0 ? (
             filteredPosts.map((post) => (

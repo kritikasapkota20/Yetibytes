@@ -25,8 +25,8 @@ const Category = () => {
     }} 
     >
 
-    <div className="bg-white w-full max-w-6xl mx-auto " >
-      <div className="bg-primary text-white flex justify-center py-4 font-bold text-lg">
+    <div className="bg-white w-full max-full    " >
+      <div className="bg-primary text-white flex justify-center py-4 font-bold text-lg  ">
         <div className="flex gap-10  sm:gap-15 md:gap-32 items-center">
           <div>DESIGN</div>
            <div className='h-10 '>
@@ -36,7 +36,7 @@ const Category = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-14  text-sm font-medium py-4 flex-wrap">
+      <div className="flex justify-center gap-14  text-sm font-medium py-4 flex-wrap mx-auto max-w-7xl px-4 md:px-8 ">
         {categories.map((category) => (
           <button
             key={category}
@@ -52,7 +52,7 @@ const Category = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-8 gap-10">
+      <div className="flex flex-col md:flex-row items-start justify-between mx-auto max-w-7xl  md-4 md:px-8 py-8 gap-10">
         {/* <div className="flex-1">
           <div className="text-2xl font-bold mb-4">Create Your Own Designs</div>
           <div className="text-gray-600 mb-6">

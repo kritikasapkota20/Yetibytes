@@ -5,7 +5,7 @@ const DigitalMarketing = () => {
   
 
   return (
-    <div className="w-full h-full px-6">
+    <div className="w-full h-full ">
       {/* Header Section */}
       <div className="text-center mb-8">
         <div className="text-3xl font-bold text-gray-800">

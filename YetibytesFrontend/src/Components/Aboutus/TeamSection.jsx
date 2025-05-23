@@ -39,14 +39,14 @@ const data = {
 const TeamSection = () => {
   return (
     <div 
-      className="w-full relative py-16"
+      className="w-full relative py-16 px-8 max-w-7xl mx-auto "
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}
     >
-      <div className="w-full px-4">
+      <div className="w-full ">
         <div className="flex justify-center items-center text-3xl font-bold mb-16">
           <div className="text-black flex mr-2">OUR</div>
           <div className="text-primary">TEAM</div>

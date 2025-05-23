@@ -9,12 +9,16 @@ import Herosection from '../../Components/Home/Herosection'
 const Home = () => {
   return (
     <>
+    <div >
+
+  
       <Herosection />
       <ExpertiseCard/>
       <Workflow/>
       <Category/>
       <Slider/>
       <Banner/>
+        </div>
     </>
   )
 }

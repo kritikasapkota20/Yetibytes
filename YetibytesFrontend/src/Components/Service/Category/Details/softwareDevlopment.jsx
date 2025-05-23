@@ -13,7 +13,7 @@ const SoftwareDevelopment = () => {
   ];
 
   return (
-    <div className="p-4  w-full h-full">
+    <div className="py-4  w-full h-full">
       <div className="text-center mb-8">
         <div className="text-2xl md:text-3xl font-bold text-blue-800">
           Customized Software Development Solutions Offered

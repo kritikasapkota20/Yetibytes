@@ -35,7 +35,7 @@ const Description = ({ selectedCategory }) => {
   const { heading, text, images } = content[selectedCategory] || {};
 
   return (
-    <div className="flex flex-col gap-8 md:flex-row px-4">
+    <div className="flex flex-col gap-8 md:flex-row px-8">
       {/* Left section: heading, text, button, contact */}
       <div className="flex-1 w-full md:w-1/2 ">
         <div className="text-2xl font-bold mb-4">{heading}</div>
