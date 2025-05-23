@@ -89,7 +89,7 @@ const Description = ({ selectCategory }) => {
     const category = data[selectCategory] || data["Web Development"];
 
     return (
-        <div className="w-full flex flex-col md:flex-row gap-8 ">
+        <div className="w-full flex flex-col md:flex-row gap-8 px-4 md:px-8">
             <div className="text-section">
                 <div className="text-2xl text-primary py-2">{category.heading}</div>
                 <div className="text-gray-500">{category.description}</div>

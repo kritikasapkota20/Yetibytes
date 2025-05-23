@@ -5,7 +5,7 @@ const Banner = () => {
   return (
    <div className="relative bg-[#E6F4FF] overflow-hidden ">
   {/* Content above curve */}
-  <div className="flex justify-center items-center w-full pt-20 px-4">
+  <div className="flex justify-center items-center w-full pt-20 ">
     <div className="bg-white rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center w-full max-w-5xl p-7 px-7 md:px-20 gap-6">
       <div className="text-xl md:text-2xl font-bold text-gray-800 text-center md:text-left w-full md:w-[340px]">
         Hire the best developers and designers around!

@@ -2,9 +2,9 @@ import React from "react";
 
 const Employee = () => {
   return (
-    <div className="w-full px-4 py-6 flex flex-col items-center">
+    <div className="w-full  py-6 flex flex-col items-center">
       <div
-        className="w-full max-w-5xl mx-auto bg-center bg-cover py-4 px-6"
+        className="w-full max-w-5xl mx-auto bg-center bg-cover py-4 "
         style={{
           backgroundImage: `url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?t=st=1745201779~exp=1745205379~hmac=f0a38c982e14d9642034357f5a729634cb7fc956a06f4a37ec682c56c244357a&w=1380')`,
         }}

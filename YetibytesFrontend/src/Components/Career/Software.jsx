@@ -3,7 +3,7 @@ import image from "../../assets/careerpage.svg";
 
 const Software = () => {
   return (
-    <div className="w-full py-16 px-4 grid ">
+    <div className="w-full py-16  grid ">
       <div className="text-3xl font-bold text-center text-primary mb-12">
         Who We’re Looking For
       </div>

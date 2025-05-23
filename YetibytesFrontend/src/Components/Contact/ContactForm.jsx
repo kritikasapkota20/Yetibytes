@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   const [selectedCode, setSelectedCode] = useState("+977");
   return (
-    <div className="w-full min-h-screen flex items-center justify-center relative py-16 px-4">
+    <div className="w-full min-h-screen flex items-center justify-center relative py-16 ">
       <div className=" bg-white rounded-2xl shadow-2xl  flex flex-col md:flex-row">
         <div className="bg-gray-100 p-8 md:w-1/3 rounded-2xl shadow-2xl">
           <div className="mb-8">

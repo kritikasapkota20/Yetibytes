@@ -34,15 +34,15 @@ const ExpertiseCard = () => {
   ];
 
   return (
-    <div className="px-4 text-center mt-4">
+    <div className=" text-center mt-4 px-8">
       <div className="text-2xl font-semibold text-primary mb-8">
         Areas of Expertise
       </div>
-      <div className="flex flex-wrap justify-center gap-5 cursor-pointer">
+      <div className="flex flex-wrap justify-center gap-8 cursor-pointer">
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-48 h-48 bg-white shadow-md rounded-md p-6 flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-primary group"
+            className="  w-60 md:w-52 h-48 bg-white shadow-md rounded-md p-6 flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-primary group"
           >
             <img
               src={item.img}
