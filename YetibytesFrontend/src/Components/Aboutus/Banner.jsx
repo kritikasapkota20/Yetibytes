@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="max-w-6xl flex justify-center py-6 px-4 md:px-16 mx-auto ">
+    <div className="max-w-6xl flex justify-center py-6  mx-auto ">
       <div className="flex flex-col md:flex-row items-center gap-16 max-w-7xl w-full">
         <div className="grid grid-cols-2 md:w-2/5">
           <img

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Digitalmarketing from "../../assets/digitalmarketingicon.svg"
 import image from "../../assets/webdevlopment.svg";
 
@@ -89,10 +90,12 @@ const Description = ({ selectCategory }) => {
     const category = data[selectCategory] || data["Web Development"];
 
     return (
-        <div className="w-full flex flex-col md:flex-row gap-8 ">
-            <div className="text-section">
-                <div className="text-2xl text-primary py-2">{category.heading}</div>
-                <div className="text-gray-500">{category.description}</div>
+        <div className="w-full flex flex-col md:flex-row gap-8 px-2 md:px-8 md:px-16 py-8 md:py-8 bg-transparent rounded-lg">
+            <div className="flex-1 flex flex-col justify-center">
+            {/* <div className="flex flex-col md:flex-row gap-8 px-4 md:px-8 py-8 bg-white rounded-lg shadow-md"> */}
+  {/* <div className="flex-1 flex flex-col justify-center"> */}
+                <div className="text-2xl md:text-3xl text-primary py-2">{category.heading}</div>
+                <div className="text-gray-500 text-base md:text-lg mb-2">{category.description}</div>
                 <div>
                     {category.highlights.map((item, index) => (
                         <div key={index} className="py-4">
@@ -104,15 +107,20 @@ const Description = ({ selectCategory }) => {
                     ))}
                 </div>
             </div>
-            <div className="w-full grid grid-cols-1  ">
+                  <div className="flex-1 flex items-center justify-center">
                 <img
                     src={category.image}
                     alt={category.heading}
                     className="rounded-md  h-[350px] w-full"
+                    //    className="rounded-md w-full max-w-[500px] h-auto object-contain"
                 />
             </div>
         </div>
     );
 };
+Description.propTypes = {
+    selectCategory: PropTypes.string
+};
+
 
 export default Description;
