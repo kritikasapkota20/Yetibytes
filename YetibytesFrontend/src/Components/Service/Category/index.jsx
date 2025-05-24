@@ -36,9 +36,10 @@ const Category = () => {
   };
 
   return (
-    <div className="w-full py-5  max-w-7xl px-4 md:px-8">
+    // <div className="w-full py-5  max-w-7xl px-4 md:px-8">
+      <div className="w-full py-5 max-w-7xl px-4 md:px-8 pt-20 mx-auto">
       <div
-        className="w-full h-screen py-6"
+           className="w-full py-6"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
@@ -55,16 +56,20 @@ const Category = () => {
           </div>
 
           <div className="w-full flex justify-center mb-10 ">
-            <div className="flex  justify-center">
+            {/* <div className="flex flex-wrap gap-3 justify-center w-full"> */}
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center w-full">
+
               {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`min-w-[244px] sm:min-w-[220px] md:min-w-[245px] px-4 py-2 sm:px-6 sm:py-3 flex flex-wrap items-center justify-center text-sm sm:text-base  whitespace-nowrap ${
+                  // className={`min-w-[244px] sm:min-w-[220px] md:min-w-[245px] px-4 py-2 sm:px-6 sm:py-3 flex flex-wrap items-center justify-center text-sm sm:text-base  whitespace-nowrap ${
+                    className={`px-4 py-2 sm:px-6 sm:py-3 flex items-center justify-center text-sm sm:text-base whitespace-nowrap rounded transition-all ${
                     selectedCategory === category
                       ? "text-white bg-primary"
                       : "text-primary bg-transparent border border-primary"
                   }`}
+                   style={{ minWidth: "120px" }}
                 >
                   <span>🔧 {category}</span>
                 </button>
@@ -72,16 +77,25 @@ const Category = () => {
             </div>
           </div>
 
-          <div className="w-full flex justify-center">
+{/* Description */}
+          <div className="w-full flex justify-center mt-8">
+             <div className="w-full mt-2 max-w-6xl">
             <Description selectCategory={selectedCategory} />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-2 py-10">
-        {renderCategoryContent()}
-      </div>
-    </div>
+{/* Category Detail */}
+      {/* <div className="max-w-7xl mx-auto px-2 py-10"> */}
+{/* <div className="max-w-7xl mx-auto px-2 py-10 mt-16 md:mt-24"> */}
+  
+    <div className="w-full flex justify-center mt-auto mb-10">
+  <div className="w-full max-w-6xl">
+    {renderCategoryContent()}
+  </div>
+</div>
+</div> 
   );
 };
 

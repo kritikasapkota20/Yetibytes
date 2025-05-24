@@ -10,9 +10,11 @@ const Header = () => {
     return location.pathname === path;
   };
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 px-4 md:px-8 ">
-      <div className="container  flex items-center justify-between py-2 mx-auto max-w-7xl">
-        {/* Logo Section */}
+    // <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 px-4 md:px-8 ">
+    //   <div className="container  flex items-center justify-between py-2 mx-auto max-w-7xl">
+    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 w-full">
+  <div className="container mx-auto max-w-7xl flex items-center justify-between py-2 px-4 md:px-8"> 
+    {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/">
             <img
@@ -97,7 +99,8 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        // <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-white shadow-md px-4 py-4">
           <nav className="flex flex-col space-y-4 px-4 py-4">
             <Link
               to="/"
